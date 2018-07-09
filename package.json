@@ -1,0 +1,33 @@
+{
+  "name": "lz",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "lz": "lib/cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "clear": "^0.1.0",
+    "commander": "^2.17.1",
+    "cross-spawn": "^6.0.5",
+    "figlet": "^1.2.0",
+    "gitignore-parser": "git+ssh://git@github.com/alecsgone/gitignore-parser.git",
+    "inquirer": "^6.2.0",
+    "lodash.template": "^4.4.0",
+    "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.6.2",
+    "solidarity-react-native": "^2.0.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.2"
+  }
+}
