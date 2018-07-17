@@ -1,0 +1,9 @@
+{
+	"element": {
+		"template": "templates/.prettierrc"
+	},
+	"web": {
+		"template": "../templates/web",
+		"postcreate": "npm install"
+	}
+}
