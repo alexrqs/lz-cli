@@ -25,7 +25,8 @@
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.6.2",
-    "solidarity-react-native": "^2.0.2"
+    "solidarity-react-native": "^2.0.2",
+    "update-notifier": "^2.5.0"
   },
   "devDependencies": {
     "prettier": "^1.14.2"
