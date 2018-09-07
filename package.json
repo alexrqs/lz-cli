@@ -21,7 +21,7 @@
     "figlet": "^1.2.0",
     "gitignore-parser": "git+ssh://git@github.com/alecsgone/gitignore-parser.git",
     "inquirer": "^6.2.0",
-    "lodash.template": "^4.4.0",
+    "lodash": "^4.17.10",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.6.2",
