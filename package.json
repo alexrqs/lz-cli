@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prettier": "prettier",
+    "precommit": "pretty-quick --staged",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
@@ -25,10 +26,11 @@
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.6.2",
-    "solidarity-react-native": "^2.0.2",
     "update-notifier": "^2.5.0"
   },
   "devDependencies": {
-    "prettier": "^1.14.2"
+    "husky": "^0.14.3",
+    "prettier": "^1.14.2",
+    "pretty-quick": "^1.6.0"
   }
 }
