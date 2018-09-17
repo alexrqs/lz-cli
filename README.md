@@ -90,4 +90,9 @@ lz allows you 3 diffent types of scaffold
 `lz github user/repo` will grab the repo and replicate the structure from the template folder and will use the config from the root.
 
 ### folder
-`lz folder ../foo/bar` replicates the folder structure replacing variabl
+`lz folder ../foo/bar` replicates the folder structure replacing variables
+
+# Examples
+
+* Simple webpack app https://github.com/alecsgone/scaffold-web (it will probably grow to include babel/sass/html)
+* ExpressJS https://github.com/alecsgone/lz-express using this as `lz gh alecsgone/lz-express` will not only give you the barebones for an express app but it also contains template creator to scaffold controllers, routes and models once the app is created
