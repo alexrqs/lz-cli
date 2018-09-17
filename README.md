@@ -95,4 +95,8 @@ lz allows you 3 diffent types of scaffold
 # Examples
 
 * Simple webpack app https://github.com/alecsgone/scaffold-web (it will probably grow to include babel/sass/html)
-* ExpressJS https://github.com/alecsgone/lz-express using this as `lz gh alecsgone/lz-express` will not only give you the barebones for an express app but it also contains template creator to scaffold controllers, routes and models once the app is created
+* ExpressJS https://github.com/alecsgone/lz-express using this as 
+    ```sh
+    lz gh alecsgone/lz-express
+    ``` 
+    Will not only give you the barebones for an express app but it also contains template creator to scaffold controllers, routes and models once the app is created
