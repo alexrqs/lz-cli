@@ -2,12 +2,12 @@
 scaffold for the masses
 
 ## Usage
-local and global install will work, local will be useful if you want to combine it with npm scripts, global to be used everywhere 
+local and global install will work, local will be useful if you want to combine it with NPM scripts, global to be used everywhere
 To install globally
 ```sh
 $ npm i -g lz-cli
 ```
-this will make the `lz` command available 
+this will make the `lz` command available
 to install locally:
 ```
 $ npm i lz-cli -D
@@ -84,7 +84,7 @@ module.exports = {
 ```
 
 ### Scaffold
-lz allows you 3 diffent types of scaffold
+lz allows you 3 different types of scaffold
 
 ### github
 `lz github user/repo` will grab the repo and replicate the structure from the template folder and will use the config from the root.
@@ -95,8 +95,8 @@ lz allows you 3 diffent types of scaffold
 # Examples
 
 * Simple webpack app https://github.com/alecsgone/scaffold-web (it will probably grow to include babel/sass/html)
-* ExpressJS https://github.com/alecsgone/lz-express using this as 
+* ExpressJS https://github.com/alecsgone/lz-express using this as
     ```sh
     lz gh alecsgone/lz-express
-    ``` 
-    Will not only give you the barebones for an express app but it also contains template creator to scaffold controllers, routes and models once the app is created
+    ```
+    Will not only give you the bare-bones for an express app but it also contains template creator to scaffold controllers, routes and models once the app is created
