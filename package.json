@@ -26,6 +26,7 @@
     "figlet": "^1.2.0",
     "gitignore-parser": "git+ssh://git@github.com/alecsgone/gitignore-parser.git",
     "inquirer": "^6.2.0",
+    "is-windows": "^1.0.2",
     "lodash": "^4.17.10",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
