@@ -26,7 +26,6 @@
     "commander": "^2.17.1",
     "cross-spawn": "^6.0.5",
     "figlet": "^1.2.0",
-    "gitignore-parser": "git+ssh://git@github.com/alecsgone/gitignore-parser.git",
     "inquirer": "^6.2.0",
     "is-windows": "^1.0.2",
     "lodash": "^4.17.10",
