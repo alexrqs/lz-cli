@@ -80,3 +80,6 @@ yarn.lock
 # End of https://www.gitignore.io/api/node
 
 .DS_Store
+
+# temp test files
+.tmp

@@ -7,7 +7,8 @@
     "eslint": "eslint lib/.",
     "prettier": "prettier",
     "precommit": "pretty-quick --staged",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "rimraf test/fixtures/.tmp && mkdir test/fixtures/.tmp",
+    "test": "ava"
   },
   "bin": {
     "lz": "lib/cli.js"
@@ -30,16 +31,17 @@
     "is-windows": "^1.0.2",
     "lodash": "^4.17.10",
     "mkdirp": "^0.5.1",
-    "rimraf": "^2.6.2",
     "simple-git": "^1.103.0",
     "update-notifier": "^2.5.0"
   },
   "devDependencies": {
+    "ava": "1.0.0-beta.8",
     "eslint": "^5.6.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "husky": "^0.14.3",
     "prettier": "^1.14.2",
-    "pretty-quick": "^1.6.0"
+    "pretty-quick": "^1.6.0",
+    "rimraf": "^2.6.2"
   }
 }
