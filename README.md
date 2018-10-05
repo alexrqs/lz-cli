@@ -31,7 +31,23 @@ and modify your package.json to use it
 ```
 
 ## Create your template
-TBD
+- Inside a `template` folder, create the folder structure and files that you wish to replicate
+- Use `<%= variableName %>` inside your files to replace the value later when the bootstrap is happening
+- create a `lz.config.js` sibling to the `template/` folder on the root path of the project, the file should include a `prompt` key to stablish the variables same as you will with [`inquirer`](https://github.com/SBoudrias/Inquirer.js#readme)
+```js
+module.exports = {
+  prompt: [
+    {
+      type: 'input',
+      name: 'variableName',
+      message: 'variable Name?',
+      default: 'user',
+    },
+  ],
+}
+```
+- example: https://github.com/alecsgone/lz-express/blob/master/lz.config.js
+
 
 ## Bootstrap a project from github
 Probably you want the global install or simply run it with `npx lz-cli`
