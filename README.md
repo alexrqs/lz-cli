@@ -1,6 +1,7 @@
 # lz-cli
 
 scaffold for the masses
+
 ![circleci badge](https://img.shields.io/circleci/project/github/alecsgone/lz-cli/master.svg)
 
 ## Usage
