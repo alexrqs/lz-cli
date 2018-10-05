@@ -1,1 +1,1 @@
-console.log('<%= interpolation %>')
+console.log('<%= interpolation %>');
