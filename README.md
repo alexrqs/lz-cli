@@ -5,21 +5,23 @@ scaffold for the masses
 [![circleci badge](https://img.shields.io/circleci/project/github/alecsgone/lz-cli/master.svg)](https://circleci.com/gh/alecsgone/workflows/lz-cli)
 
 ## Usage
+- [Install](#install)
+- [Create your template](#create-your-template)
+- Use case: [Bootstrap a project from github](#bootstrap-a-project-from-github)
+- Use case: [Scaffold a files from local source](#scaffold-a-files-from-local-source)
 
-local and global install will work, local will be useful if you want to combine it with NPM scripts, global to be used everywhere
-To install globally
+## Install
+Local and global installs will work, local will be useful if you want to combine it with NPM scripts, global to be used everywhere to start projects from scratch
 
+- Globally
 ```sh
-$ npm i -g lz-cli
+$ npm i -g lz-cli # this will make the `lz` command available
 ```
 
-this will make the `lz` command available
-to install locally:
-
+- Locally:
 ```
 $ npm i lz-cli -D
 ```
-
 and modify your package.json to use it
 
 ```json
@@ -27,6 +29,20 @@ and modify your package.json to use it
  "new:foo": "lz generate foo"
 }
 ```
+
+## Create your template
+TBD
+
+## Bootstrap a project from github
+Probably you want the global install or simply run it with `npx lz-cli`
+after you have your template ready use the `gh` command with your `user` and `repo` to copy the structure from github on an empty folder
+
+```
+lz gh user/repo
+```
+
+## Scaffold a files from local source
+TBD
 
 ### Create your config file
 
