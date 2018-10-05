@@ -1,11 +1,11 @@
 {
   "name": "lz-cli",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "eslint": "eslint lib/.",
     "prettier": "prettier",
+    "eslint": "eslint lib/.",
     "precommit": "pretty-quick --staged",
     "pretest": "rimraf test/fixtures/.tmp && mkdir test/fixtures/.tmp",
     "test": "ava"
