@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "eslint": "eslint lib/.",
+    "prepare": "npm t",
     "prettier": "prettier",
     "precommit": "pretty-quick --staged",
     "pretest": "rimraf test/fixtures/.tmp && mkdir test/fixtures/.tmp",
