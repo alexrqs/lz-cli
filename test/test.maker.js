@@ -38,3 +38,32 @@ test('Maker scenario with folder', t => {
   t.is(isIndex, expectedIndex, 'generates the indexjs ok and goes to the right directory')
   t.is(isStyle, expectedStyle, 'generates the stylefile ok and goes to the right directory')
 })
+
+test('Maker scenario with folder and gitignore', t => {
+  const scenario = 's3'
+  const destination = `${TMP_FOLDER}/${scenario}`
+
+  maker(`./test/fixtures/case-${scenario}`, answers, false, destination)
+
+  const expectedIndex = fs
+    .readFileSync(`test/fixtures/expected-${scenario}/src/index.js`)
+    .toString()
+  const isIndex = fs.readFileSync(`${destination}/src/index.js`).toString()
+
+  const expectedgitignore = fs
+    .readFileSync(`test/fixtures/expected-${scenario}/.gitignore`)
+    .toString()
+  const isgitignore = fs.readFileSync(`${destination}/.gitignore`).toString()
+
+  const error = t.throws(() => {
+    fs.readFileSync(`test/fixtures/expected-${scenario}/src/style.styl`)
+  }, Error)
+
+  t.is(isgitignore, expectedgitignore, 'generates the gitignore ok on the right directory')
+  t.is(isIndex, expectedIndex, 'generates the indexjs ok and goes to the right directory')
+  t.regex(
+    error.message,
+    /no\ssuch\sfile\sor\sdirectory/g,
+    'doesnt generates the stylefile because is inside gitignore',
+  )
+})
